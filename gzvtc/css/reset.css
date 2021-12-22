@@ -1,0 +1,44 @@
+body,
+div,
+header,
+article,
+section,
+footer,
+nav,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+
+}
+
+li,
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearbox {
+	clear: both;
+}

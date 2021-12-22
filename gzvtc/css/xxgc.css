@@ -1,0 +1,12 @@
+/* 信息工程学院 */
+header section {
+	left: 250px;
+}
+
+header section a {
+	cursor: pointer;
+}
+
+article {
+	height: 1000px;
+}
