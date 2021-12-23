@@ -2,39 +2,50 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>学生系统登录</title>
+		<title>学生系统</title>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/reset.css">
-		<style type="text/css">
-			.box {
-				position: relative;
-				width: 500px;
-				height: 500px;
-				margin: 100px auto;
-				background-color: skyblue;
-			}
-			p {
-				position: absolute;
-				right: 0;
-			}
-		</style>
+		<link rel="stylesheet" href="css/login.css">
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<div class="box">
-			<h2>广州工程技术职业学院</h2>
-			<form action="">
-				账号：<input type="text" name="" id="" value="" /><br>
-				密码：<input type="password" name="" id="" value="" /><br>
-				验证码：<input type="text" name="" id="" value="" /><br>
-				<button type="button">登录</button>
-			</form>
-			<div>
-				<p>
-					教师/学生<br>
+		<h2><a href="index.html"><img src="img/loginlogo.png" alt=""></a></h2>
+		<div class="infobox">
+			<section>
+				<form action="" id="info" method="">
+					<h3>欢迎使用学生系统</h3>
+					<span><i class="iconfont"></i><input type="text" placeholder="请输入账号" name="" id="inputBox1"
+							value="" /></span><br>
+					<span><i class="iconfont"></i><input type="password" placeholder="请输入密码" name="" id="inputBox2"
+							value="" /></span><br>
+					<span><input type="text" placeholder="请输入验证码" name="" id="yzm1" value="" /></span>
+					<img src="img/yzm1.jpg" class="yzmp"><br>
+					<button id="btn1">登录</button>
+				</form>
+				<form action="" id="idea">
+					<h3>欢迎使用学生系统</h3>
+					<span><i class="iconfont"></i><input type="text" placeholder="请输身份证或学生号" name="" id="inputBox3"
+							value="" /></span><br>
+					<span><i class="iconfont"></i><input type="password" placeholder="请输入密码" name="" id="inputBox4"
+							value="" /></span><br>
+					<span><input type="text" placeholder="请输入验证码" name="" id="yzm2" value="" /></span>
+					<img src="img/yzm11.jpg" class="ideap"><br>
+					<button id="btn2">登录</button>
+				</form>
+			</section>
+			<div class="box">
+				<p class="info">
+					<span>教师/学生</span><br>
 					学校统一身份认证服务<br>
-					教师/学生首次登录请使用该方式<br>
-					<button>身份证或校园卡登录</button>
+					首次登录请使用该方式<br>
+					<button id="btn3">身份证或校园卡登录</button>
+				</p>
+				<p class="idea">
+					<span>教师/学生</span><br>
+					学校统一身份认证服务<br>
+					首次登录密码为身份证后6位<br>
+					<button id="btn4">账号密码登录</button>
 				</p>
 			</div>
 		</div>

@@ -1,0 +1,15 @@
+{
+	"userArr": [{
+			"uname": "201618201100",
+			"password": "084510"
+		},
+		{
+			"uname": "google",
+			"password": "123456"
+		},
+		{
+			"uname": "admin",
+			"password": "admin"
+		}
+	]
+}
