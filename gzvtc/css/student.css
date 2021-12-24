@@ -1,0 +1,278 @@
+body {
+	background-color: #fff;
+}
+
+.header {
+	width: 100%;
+	height: 75px;
+	background-color: #104A6A;
+}
+
+.header h1 {
+	position: absolute;
+	top: 15px;
+}
+.header a {
+	color: #fff;
+}
+.host {
+	position: absolute;
+	top: 25px;
+	left: 260px;
+}
+
+.server {
+	position: absolute;
+	left: 350px;
+	width: 120px;
+	height: 75px;
+	line-height: 75px;
+}
+
+.serverdown>ul {
+	position: absolute;
+	top: 75px;
+	width: 100%;
+	height: 360px;
+	z-index: 999;
+	display: none;
+}
+
+.serverdown ul li {
+	width: 100%;
+	height: 60px;
+	line-height: 40px;
+	background-color: #fff;
+	margin-left: 30px;
+}
+
+.serverdown ul li:nth-child(1) {
+	margin-top: 0;
+}
+
+.serverdown ul li a {
+	margin-right: 50px;
+	font-size: 14px;
+	color: #666;
+}
+
+.serverdown ul li a:hover {
+	color: #258dce;
+}
+
+.serverdown ul li a:nth-child(1) {
+	color: #333;
+}
+
+@keyframes menu1 {
+	from {
+		transform: rotateY(90deg);
+	}
+
+	to {
+		transform: rotateY(0);
+	}
+}
+
+.menu1 {
+	animation-name: menu1;
+	animation-duration: 1s;
+	transform-origin: left;
+}
+
+.header a {
+	font-size: 16px;
+	color: #fff;
+}
+
+.header ul {
+	position: absolute;
+	top: 25px;
+	right: 0;
+}
+
+.header ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+.iconfont {
+	position: relative;
+	top: 2px;
+	left: 2px;
+}
+
+article {
+	height: 900px;
+}
+
+article aside {
+	position: absolute;
+	top: 50px;
+}
+
+article aside p {
+	width: 130px;
+	height: 40px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #104A6A;
+	border-radius: 15px;
+	border: 2px solid #ddd;
+	margin-bottom: 10px;
+}
+
+article aside p a {
+	color: #fff;
+}
+
+article div {
+	background-color: #e5f7ff;
+	border-radius: 10px;
+	border: 1px solid #78ffff;
+}
+
+.avatar {
+	position: absolute;
+	top: 50px;
+	left: 170px;
+	width: 405px;
+	height: 265px;
+}
+
+.avatar h4 {
+	width: 405px;
+	height: 119px;
+	border-radius: 10px 10px 0 0;
+	background: url(../img/avatar_bg.png) no-repeat;
+}
+
+.avatar img {
+	position: absolute;
+	top: 50px;
+	left: 140px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.avatar span {
+	position: absolute;
+	top: 180px;
+	left: 160px;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.personal {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	width: 600px;
+	height: 265px;
+}
+
+.personal>ol {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.personal>ol li {
+	margin-top: 25px;
+}
+
+.personal>ol li a {
+	color: #666;
+}
+
+.personal>ul {
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+}
+
+.personal>ul li {
+	float: left;
+}
+
+.personal>ul li a {
+	color: #258dce;
+}
+
+.personal p {
+	position: absolute;
+	right: 15px;
+	bottom: 60px;
+}
+
+.personal p a {
+	display: inline-block;
+	width: 110px;
+	height: 150px;
+	background: url(../img/weather.png) no-repeat;
+}
+
+section ul {
+	position: absolute;
+	top: 320px;
+	left: 170px;
+	width: 1030px;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section ul>li {
+	width: 49%;
+	height: 245px;
+	border: 1px solid #78ffff;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+section ul>li h3 {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #e5f7ff;
+}
+
+section ul>li h3 span {
+	margin-left: 10px;
+	color: #258dce;
+}
+
+section ul>li h3 a {
+	display: inline-block;
+	width: 40px;
+	height: 25px;
+	background-color: #7acc29;
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+	border-radius: 5px;
+	color: #fff;
+	line-height: 25px;
+	font-size: 12px;
+	text-align: center;
+}
+
+section ul>li:nth-child(1) h3 a {
+	width: 70px;
+}
+
+.tz li {
+	margin: 7px 10px;
+}
+
+.tz span {
+	float: right;
+	color: #666;
+	font-size: 13px;
+}
+
+.tz a {
+	color: #666;
+	font-size: 14px;
+}

@@ -2,10 +2,214 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>学生信息系统</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="css/student.css">
+		<script type="text/javascript">
+			window.addEventListener("load",function() {
+				var server = document.querySelector('.server');
+				var serverdown = document.querySelector('.serverdown').querySelector("ul");
+					server.onmouseover = function() {
+						serverdown.style.display = 'block'; 
+						serverdown.className = 'menu1'; 
+					}
+					serverdown.onmouseover = function() {
+						serverdown.style.display = 'block'; 
+					}
+					server.onmouseout = function() {
+						serverdown.style.display = 'none';
+					}
+					serverdown.onmouseout = function() {
+						serverdown.style.display = 'none';
+					}
+			});
+		</script>
 	</head>
 	<body>
+		<div class="header">
+			<div class="public">
+				<h1><a href="index.html"><img src="img/logo.png"></a></h1>
+				<div class="host"><a href="student.html"><i class="iconfont"> </i>首页</a></div>
+				<div class="server">
+					<a href="javascript:;"><i class="iconfont"> </i>服务大厅<i class="iconfont"></i></a>
+				</div>
+				<ul>
+					<li><a href="javascript:;"><i class="iconfont"> </i>李冠浩 &nbsp;&nbsp;|</a></li>
+					<li><a href="javascript:;"><i class="iconfont"> </i>设置</a></li>
+					<li><a href="login.html"><i class="iconfont"> </i>退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="serverdown">
+			<ul>
+				<li>
+					<strong><a href="javascript:;">我的档案<i class="iconfont"></i></a></strong>
+					<a href="javascript:;">证书管理</a>
+					<a href="javascript:;">电子档案</a>
+					<a href="javascript:;">个人资料</a>
+					<a href="javascript:;">荣誉管理</a>
+					<a href="javascript:;">日常行为</a>
+				</li>
+				<li>
+					<strong><a href="javascript:;">毕业设计<i class="iconfont"></i></a></strong>
+					<a href="javascript:;">我的任务</a>
+					<a href="javascript:;">成绩查询</a>
+					<a href="javascript:;">论文上传</a>
+					<a href="javascript:;">网上选题</a>
+					<a href="javascript:;">开题报告</a>
+					<a href="javascript:;">在线指导</a>
+					<a href="javascript:;">我的课题</a>
+					<a href="javascript:;">答辩查询</a>
+					<a href="javascript:;">中期检查</a>
+				</li>
+				<li>
+					<strong><a href="javascript:;">我的学习<i class="iconfont"></i></a></strong>
+					<a href="javascript:;">课表查询</a>
+					<a href="javascript:;">工作实践申请</a>
+					<a href="javascript:;">缺课查询</a>
+					<a href="javascript:;">课程计划</a>
+					<a href="javascript:;">成绩查询</a>
+					<a href="javascript:;">我的老师</a>
+					<a href="javascript:;">评教</a>
+					<a href="javascript:;">网上选课</a>
+					<a href="javascript:;">我的选课记录</a>
+					<a href="javascript:;">我的选修课</a>
+					<a href="javascript:;">补考查询</a>
+					<a href="javascript:;">考试报名</a>
+				</li>
+				<li>
+					<strong><a href="javascript:;">校园生活<i class="iconfont"></i></a></strong>
+					<a href="javascript:;">学生月志</a>
+					<a href="javascript:;">舍长日志</a>
+					<a href="javascript:;">我的银行卡</a>
+					<a href="javascript:;">列表新闻</a>
+					<a href="javascript:;">调查问卷</a>
+					<a href="javascript:;">通知列表</a>
+					<a href="javascript:;">缴费管理</a>
+					<a href="javascript:;">请假申请</a>
+					<a href="javascript:;">违纪查询</a>
+					<a href="javascript:;">消息列表</a>
+				</li>
+				<li>
+					<strong><a href="javascript:;">社会实践<i class="iconfont"></i></a></strong>
+					<a href="javascript:;">我的勤工岗位</a>
+				</li>
+				<li>
+					<strong><a href="javascript:;">顶岗实习<i class="iconfont"></i></a></strong>
+					<a href="javascript:;">自主实习申请</a>
+					<a href="javascript:;">实习任务查询</a>
+					<a href="javascript:;">实习单位变更</a>
+					<a href="javascript:;">我的实习计划</a>
+					<a href="javascript:;">我的实习周记</a>
+					<a href="javascript:;">我的实习总结</a>
+					<a href="javascript:;">我的实习报告</a>
+					<a href="javascript:;">实习成绩查询</a>
+				</li>
+			</ul>
+		</div>
+		<article class="public">
+			<aside>
+				<p><a href="javascript:;"><i class="iconfont"> </i>常用功能</a></p>
+				<p><a href="javascript:;"><i class="iconfont"> </i>自定义</a></p>
+			</aside>
+			<div class="avatar">
+				<h4><img src="img/avatar.png" alt=""></h4>
+				<span>李冠浩</span>
+			</div>
+			<div class="personal">
+				<ol>
+					<li><a href="javascript:;"><i class="iconfont"> &nbsp;</i>学号：201618201100</a></li>
+					<li><a href="javascript:;"><i class="iconfont"> &nbsp;</i>院系：信息工程学院</a></li>
+					<li><a href="javascript:;"><i class="iconfont"> &nbsp;</i>班级：普高2020软件技术2班</a></li>
+				</ol>
+				<ul>
+					<li><a href="javascript:;">基本资料 &nbsp;| &nbsp;</a></li>
+					<li><a href="javascript:;">操行积分 &nbsp;| &nbsp;</a></li>
+					<li><a href="javascript:;">学习成绩 &nbsp;| &nbsp;</a></li>
+					<li><a href="javascript:;">课程计划 &nbsp;| &nbsp;</a></li>
+					<li><a href="javascript:;">消息列表 &nbsp;| &nbsp;</a></li>
+				</ul>
+				<p><a href="https://www.tianqi.com/guangzhou/?tq" target="_blank"></a></p>
+			</div>
+			<section>
+				<ul>
+					<li>
+						<h3>
+							<span><i class="iconfont"> </i>今日课程</span>
+							<a href="javascript:;">本周课程</a>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<span><i class="iconfont"> </i>通知公告</span>
+							<a href="javascript:;">更多</a>
+						</h3>
+						<ol class="tz">
+							<li>
+								<a href="javascript:;" title="关于12月校领导接待日的通知">关于12月校领导接待日的通知</a>
+								<span>2021-12-15</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="公示">公示</a>
+								<span>2021-11-23</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="关于11月校领导接待日的通知">关于11月校领导接待日的通知</a>
+								<span>2021-11-15</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="关于从化校区宿舍热水系统改造温馨提示">关于从化校区宿舍热水系统改造温馨提示</a>
+								<span>2021-10-07</span>
+							</li>
+							<li>
+								<a href="javascript:;"
+									title="关于2021—2022学年第一学期校领导接待日安排的通知">关于2021—2022学年第一学期校领导接待日安排的通知</a>
+								<span>2021-10-15</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="关于校园内出入公共场所佩戴口罩的通知">关于校园内出入公共场所佩戴口罩的通知</a>
+								<span>2021-09-15</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="广州工程技术职业学院2021年秋季学期学生返校通知">广州工程技术职业学院2021年秋季学期学生返校通知</a>
+								<span>2021-08-15</span>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<h3>
+							<span><i class="iconfont"> </i>校园新闻</span>
+							<a href="javascript:;">更多</a>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<span><i class="iconfont"> </i>文件柜</span>
+							<a href="javascript:;">更多</a>
+						</h3>
+					</li>
+				</ul>
+			</section>
+		</article>
 
+
+
+
+
+
+
+
+		<div class="footerbottom">
+			<div class="public">
+				<h4><img src="img/logo2.png" alt=""></h4>
+				<p>
+					校本部：广州市环市东路465号 邮编：510075 电话：020-87610212 从化校区：广州市从化区沿江南路302号 电话:020-37937663
+					<br>版权所有：广州工程技术职业学院　　粤ICP备09110481号-4
+				</p>
+			</div>
+		</div>
 	</body>
 </html>
