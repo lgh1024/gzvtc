@@ -8,27 +8,10 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" href="css/student.css">
-		<script type="text/javascript">
-			window.addEventListener("load",function() {
-				var server = document.querySelector('.server');
-				var serverdown = document.querySelector('.serverdown').querySelector("ul");
-					server.onmouseover = function() {
-						serverdown.style.display = 'block'; 
-						serverdown.className = 'menu1'; 
-					}
-					serverdown.onmouseover = function() {
-						serverdown.style.display = 'block'; 
-					}
-					server.onmouseout = function() {
-						serverdown.style.display = 'none';
-					}
-					serverdown.onmouseout = function() {
-						serverdown.style.display = 'none';
-					}
-			});
-		</script>
+		<script src="js/student.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<!-- header部分start -->
 		<div class="header">
 			<div class="public">
 				<h1><a href="index.html"><img src="img/logo.png"></a></h1>
@@ -43,6 +26,7 @@
 				</ul>
 			</div>
 		</div>
+		<!-- serverdown部分 -->
 		<div class="serverdown">
 			<ul>
 				<li>
@@ -110,20 +94,26 @@
 				</li>
 			</ul>
 		</div>
+		<!-- header部分end -->
+
+		<!-- article部分start -->
 		<article class="public">
+			<!-- aside部分 -->
 			<aside>
 				<p><a href="javascript:;"><i class="iconfont"> </i>常用功能</a></p>
 				<p><a href="javascript:;"><i class="iconfont"> </i>自定义</a></p>
 			</aside>
+			<!-- avatar部分 -->
 			<div class="avatar">
 				<h4><img src="img/avatar.png" alt=""></h4>
 				<span>李冠浩</span>
 			</div>
+			<!-- personal部分 -->
 			<div class="personal">
 				<ol>
-					<li><a href="javascript:;"><i class="iconfont"> &nbsp;</i>学号：201618201100</a></li>
-					<li><a href="javascript:;"><i class="iconfont"> &nbsp;</i>院系：信息工程学院</a></li>
-					<li><a href="javascript:;"><i class="iconfont"> &nbsp;</i>班级：普高2020软件技术2班</a></li>
+					<li><i class="iconfont"> &nbsp;</i>学号：201618201100</li>
+					<li><i class="iconfont"> &nbsp;</i>院系：信息工程学院</li>
+					<li><i class="iconfont"> &nbsp;</i>班级：普高2020软件技术2班</li>
 				</ol>
 				<ul>
 					<li><a href="javascript:;">基本资料 &nbsp;| &nbsp;</a></li>
@@ -134,6 +124,7 @@
 				</ul>
 				<p><a href="https://www.tianqi.com/guangzhou/?tq" target="_blank"></a></p>
 			</div>
+			<!-- section部分 -->
 			<section>
 				<ul>
 					<li>
@@ -147,7 +138,7 @@
 							<span><i class="iconfont"> </i>通知公告</span>
 							<a href="javascript:;">更多</a>
 						</h3>
-						<ol class="tz">
+						<ol class="notice">
 							<li>
 								<a href="javascript:;" title="关于12月校领导接待日的通知">关于12月校领导接待日的通知</a>
 								<span>2021-12-15</span>
@@ -184,6 +175,36 @@
 							<span><i class="iconfont"> </i>校园新闻</span>
 							<a href="javascript:;">更多</a>
 						</h3>
+						<ol class="notice">
+							<li>
+								<a href="javascript:;" title="我校获批 “虚拟和增强现实（ VR/AR）”未来技术技能与人文交流人才国际训练基地">我校获批“虚拟和增强现实（VR/AR）”未来技术技能与人...</a>
+								<span class="newsTime">2021-12-17</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="职业教育国家商务英语专业教学资源库验收培训暨信息技术赋能外语教学研讨会在广州工程技术职业学院召开">职业教育国家商务英语专业教学资源库验收培训暨信息技术...</a>
+								<span class="newsTime">2021-12-10</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="我校学子喜获2021年广东省大学生武术套路锦标赛1金1银">我校学子喜获2021年广东省大学生武术套路锦标赛1金1银</a>
+								<span class="newsTime">2021-12-09</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="我校举办“学党史、强信念、跟党走”灯塔学习会">我校举办“学党史、强信念、跟党走”灯塔学习会</a>
+								<span class="newsTime">2021-12-07</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="学校召开党委理论学习中心组（扩大）学习会传达学习贯彻党的十九届六中全会精神">学校召开党委理论学习中心组（扩大）学习贯彻党的十九届...</a>
+								<span class="newsTime">2021-11-30</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="我校党建和思想政治工作典型案例、学术论文获奖">我校党建和思想政治工作典型案例、学术论文获奖</a>
+								<span class="newsTime">2021-11-30</span>
+							</li>
+							<li>
+								<a href="javascript:;" title="信息学子喜获中国第四届虚拟现实技术及应用创新大赛高校创新赛一等奖">信息学子喜获中国第四届虚拟现实技术及应用创新大赛高...</a>
+								<span class="newsTime">2021-11-11</span>
+							</li>
+						</ol>
 					</li>
 					<li>
 						<h3>
@@ -194,14 +215,9 @@
 				</ul>
 			</section>
 		</article>
+		<!-- article部分end -->
 
-
-
-
-
-
-
-
+		<!-- footer部分start -->
 		<div class="footerbottom">
 			<div class="public">
 				<h4><img src="img/logo2.png" alt=""></h4>
@@ -211,5 +227,6 @@
 				</p>
 			</div>
 		</div>
+		<!-- footer部分end -->
 	</body>
 </html>

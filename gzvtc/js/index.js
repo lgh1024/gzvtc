@@ -130,7 +130,6 @@ window.addEventListener("load", function() {
 			num2 = 0;
 		}
 		num2++;
-		console.log(declareBox.style.left);
 		animate(campusUl, -num2 * 1);
 	}
 	//自动播放
@@ -148,6 +147,7 @@ window.addEventListener("load", function() {
 	var medias = document.querySelector(".medias");
 	window.onscroll = function() {
 		var height = document.documentElement.scrollTop || document.body.scrollTop
+		console.log(height)
 		// 新闻部分和招标信息部分
 		if (height > 450) {
 			news.className = "menu2 news";
@@ -240,7 +240,6 @@ window.addEventListener("load", function() {
 			num4 = 0;
 		}
 		num4++;
-		console.log(declareBox.style.top);
 		animateTop(declareBox, -num4 * 1);
 	}
 	//自动播放

@@ -2,6 +2,7 @@ body {
 	background-color: #fff;
 }
 
+/* header部分start */
 .header {
 	width: 100%;
 	height: 75px;
@@ -29,6 +30,7 @@ body {
 	line-height: 75px;
 }
 
+/* serverdown部分 */
 .serverdown>ul {
 	position: absolute;
 	top: 75px;
@@ -64,6 +66,7 @@ body {
 	color: #333;
 }
 
+/* serverdown动画部分 */
 @keyframes menu1 {
 	from {
 		transform: rotateY(90deg);
@@ -101,7 +104,9 @@ body {
 	top: 2px;
 	left: 2px;
 }
+/* header部分end */
 
+/* article部分start */
 article {
 	height: 900px;
 }
@@ -179,9 +184,6 @@ article div {
 
 .personal>ol li {
 	margin-top: 25px;
-}
-
-.personal>ol li a {
 	color: #666;
 }
 
@@ -262,17 +264,18 @@ section ul>li:nth-child(1) h3 a {
 	width: 70px;
 }
 
-.tz li {
+.notice li {
 	margin: 7px 10px;
 }
 
-.tz span {
+.notice span {
 	float: right;
 	color: #666;
 	font-size: 13px;
 }
 
-.tz a {
+.notice a {
 	color: #666;
 	font-size: 14px;
 }
+/* article部分end */

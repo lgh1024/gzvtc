@@ -1,0 +1,9 @@
+nav ul li:nth-child(3) a {
+	color: #1778a8;
+	font-weight: 800;
+}
+
+nav ul li:nth-child(2) a {
+	color: #333;
+	font-weight: 400;
+}

@@ -1,0 +1,309 @@
+/* 信息工程学院 */
+header section {
+	left: 250px;
+}
+
+header section a {
+	cursor: pointer;
+}
+
+/* nav部分start */
+nav {
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 999;
+}
+
+nav ul {
+	position: absolute;
+	height: 50px;
+	z-index: 999;
+}
+
+nav ul>li {
+	float: left;
+	height: 50px;
+	width: 150px;
+	text-align: center;
+	line-height: 50px;
+}
+
+nav ul li a {
+	font-size: 18px;
+	color: #333;
+}
+
+nav ul li:nth-child(1) a{
+	color: #1778a8;
+	font-weight: 800;
+}
+
+nav ul>li:hover a{
+	color: #1778a8;
+	font-weight: 800;
+}
+
+/* nav部分end */
+
+/* adv部分start */
+.adv {
+	width: 1200px;
+	height: 420px;
+	overflow: hidden;
+	box-shadow: 0 10px 15px #888888;
+	margin-top: 20px;
+}
+
+/* 左右按钮 */
+.arrowLeft,
+.arrowRight {
+	position: absolute;
+	top: 43%;
+	width: 32px;
+	height: 48px;
+	background: rgba(0, 0, 0, .5);
+	text-align: center;
+	line-height: 48px;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 0 30px 30px 0;
+	display: none;
+	z-index: 11;
+}
+
+.arrowRight {
+	right: 0;
+	border-radius: 30px 0 0 30px;
+}
+
+/* 轮播部分 */
+.adv ul {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1000%;
+}
+
+.adv ul li {
+	float: left;
+}
+.adv ul p {
+	position: absolute;
+	bottom: 0;
+	width: 1200px;
+	height: 50px;
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+	color: #fff;
+	font-size: 18px;
+	line-height: 45px;
+	display: none;
+}
+
+.adv:hover p {
+	display: block;
+}
+
+/* 小圆点 */
+.adv ol {
+	position: absolute;
+	bottom: 15px;
+	right: 5%;
+	z-index: 999;
+	display: none;
+}
+
+.adv ol li {
+	width: 12px;
+	height: 12px;
+	background-color: rgba(155,155,155,.8);
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.adv:hover ol {
+	display: block;
+}
+
+/* adv部分end */
+
+article {
+	height: 980px;
+	margin-top: 40px !important;
+}
+
+/* news模块 */
+.news {
+	position: absolute;
+	left: 10px;
+	width: 47%;
+	height: 375px;
+}
+
+.notice {
+	position: absolute;
+	width: 47%;
+	height: 375px;
+	top: 0;
+	right: 10px;
+}
+
+.news h4,
+.notice h4,
+.temp h4 {
+	height: 50px;
+	width: 100%;
+}
+
+.news h4 ._title,
+.notice h4 ._title,
+section h4 ._title,
+.temp h4 ._title {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	width: 200px;
+	height: 30px;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 30px;
+	color: #444;
+	border-radius: 20px;
+}
+
+.news h4 span,
+.notice h4 span,
+section h4 span {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+.news h4 span a,
+.notice h4 span a,
+section h4 span a {
+	font-size: 12px!important;
+	color: #666;
+}
+
+.news  h4 span:hover a,
+.notice  h4 span:hover a,
+section  h4 span:hover a {
+	color: #B1191A;
+}
+
+.news ul,
+.notice ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 325px;
+	background-color: #d1d1d1;
+}
+
+.news ul li,
+.notice ul li {
+	position: relative;
+	font-size: 14px;
+	text-align: left;
+	margin: 20px 0 20px 16px;
+}
+
+.news ul li span,
+.notice ul li span {
+	position: absolute;
+	top: 2px;
+	right: 10px;
+	font-size: 12px;
+	color: #666;
+}
+
+.news ul li a,
+.notice ul li a {
+	color: #333;
+}
+
+.news ul li a:hover, 
+.notice ul li a:hover {
+	color: #B1191A;
+}
+
+.news ul>span a,
+.notice ul>span a {
+	position: absolute;
+	bottom: -5px;
+	right: 30px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 42px;
+	font-weight: 400;
+	color: #444;
+}
+
+section {
+	position: absolute;
+	top: 400px;
+	height: 450px;
+}
+
+section ul {
+	position: absolute;
+	top: 55px;
+	height: 300px;
+	width: 100%;
+	display: flex;
+}
+
+section ul li {
+	position: relative;
+	height: 100%;
+	background-color: #fff;
+	flex: 24%;
+	margin-right: 10px;
+}
+
+section ul li:nth-child(4) {
+	margin: 0;
+}
+
+section ul li a {
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	width: 90%;
+	overflow: hidden;
+}
+
+section ul li p {
+	position: absolute;
+	top: 190px;
+	width: 100%;
+	text-align: center;
+	color: #094891;
+	font-size: 26px;
+}
+
+section ul li span {
+	position: absolute;
+	bottom: 20px;
+	display: inline-block;
+	width: 100%;
+	color: #666;
+	text-align: center;
+}
+
+section ul li a img {
+	transition: all .5s;
+}
+section ul li a img:hover {
+	transform: scale(1.1);
+}
+
+.temp {
+	position: absolute;
+	top: 780px;
+}
