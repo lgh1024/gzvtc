@@ -39,34 +39,60 @@ window.addEventListener("load", function() {
 		info.style.display = "block";
 	}
 
-	
-	btn1.onclick = function() {
-		var inputBox1 = document.getElementById("inputBox1").value;
-		var inputBox2 = document.getElementById("inputBox2").value;
-		var yzm1 = document.getElementById("yzm1").value;
-		if (!inputBox1) {
-			alert("请输入账号!");
-		} else if (!inputBox2) {
-			alert("请输入密码!");
-		} else if (!yzm1) {
-			alert("请输入验证码!");
-		} else {
-			window.open("student.html");
+	// json部分 验证账号
+	var xhr = new XMLHttpRequest();
+	var ws = 0;
+	xhr.open("GET", "login.json", true);
+	xhr.send();
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && xhr.status == 200) {
+			ws = JSON.parse(xhr.responseText)
+			var shows = document.getElementById("shows");
+			var leisure1 = info.querySelector(".leisure").value;
+			var leisure2 = idea.querySelector(".leisure").value;
+			btn1.onclick = function() {
+				var inputBox1 = document.getElementById("inputBox1").value;
+				var inputBox2 = document.getElementById("inputBox2").value;
+				var yzm1 = document.getElementById("yzm1").value;
+				if (!inputBox1) {
+					alert("请输入账号!");
+				} else if (!inputBox2) {
+					alert("请输入密码!");
+				} else if (!yzm1) {
+					alert("输入验证码");
+				} else if (!leisure1) {
+					shows.style.display = "block";
+					shows.className = "shows";
+				}
+				for (var i = 0; i < ws.userArr.length; i++) {
+					if (inputBox1 == ws.userArr[i].uname && inputBox2 == ws.userArr[i].password &&
+						yzm1 != '') {
+						window.open("student.html", "_self");
+					}
+				}
+			}
 		}
-	}
+		btn2.onclick = function() {
+			var inputBox3 = document.getElementById("inputBox3").value;
+			var inputBox4 = document.getElementById("inputBox4").value;
+			var yzm2 = document.getElementById("yzm2").value;
+			if (!inputBox3) {
+				alert("请输入账号!");
+			} else if (!inputBox4) {
+				alert("请输入密码!");
+			} else if (!yzm2) {
+				alert("输入验证码");
+			} else if (!leisure2) {
+				shows.style.display = "block";
+				shows.className = "shows";
+			}
+			for (var i = 0; i < ws.userArr.length; i++) {
+				if (inputBox3 == ws.userArr[i].uname && inputBox4 == ws.userArr[i].password &&
+					yzm2 != '') {
+					window.open("student.html", "_self");
+				}
 
-	btn2.onclick = function() {
-		var inputBox3 = document.getElementById("inputBox3").value;
-		var inputBox4 = document.getElementById("inputBox4").value;
-		var yzm2 = document.getElementById("yzm2").value;
-		if (!inputBox3) {
-			alert("请输入身份证或学生号!");
-		} else if (!inputBox4) {
-			alert("请输入密码!");
-		} else if (!yzm2) {
-			alert("请输入验证码!");
-		} else {
-			window.open("student.html");
+			}
 		}
 	}
 });

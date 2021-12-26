@@ -1,0 +1,17 @@
+{
+	"imgArr": [{
+			"imgaddr": "img/temp1.jpg"
+		},
+		{
+			"imgaddr": "img/temp2.jpg"
+		},
+		{
+			"imgaddr": "img/temp3.jpg"
+		},
+		{
+			"imgaddr": "img/temp4.jpg"
+		}
+	],
+	"code": 0,
+	"message": "success"
+}

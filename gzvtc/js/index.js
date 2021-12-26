@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
 		clearInterval(obj.timer); //停止定时器
 		obj.timer = setInterval(function() {
 			var step = (target - obj.offsetLeft) / 10;
-			step = step > 0 ? Math.ceil(step) : Math.floor(step);
+			step = step > 0 ? Math.ceil(step) : Math.floor(step); //ceil向上取整  floor向下取整
 			if (obj.offsetLeft == target) {
 				clearInterval(obj.timer); //停止动画
 			}
@@ -248,4 +248,36 @@ window.addEventListener("load", function() {
 	}, 50);
 	// declare轮播效果end
 	// article模块动画end
+
+	// json部分
+	var xhr = new XMLHttpRequest();
+	var take = 0;
+	xhr.open("GET", "index.json", true);
+	xhr.send();
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && xhr.status == 200) {
+			take = JSON.parse(xhr.responseText)
+			var topic = document.querySelector(".topic").querySelector("ul");
+			topic.innerHTML += '<li><img src="' + take.imgArr[0].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[1].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[2].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[3].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[4].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[5].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[6].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[7].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[8].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[9].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[0].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[1].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[2].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[3].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[4].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[5].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[6].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[7].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[8].imgaddr + '"></li>';
+			topic.innerHTML += '<li><img src="' + take.imgArr[9].imgaddr + '"></li>';
+		}
+	}
 });

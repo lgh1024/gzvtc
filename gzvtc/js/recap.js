@@ -22,7 +22,6 @@ window.addEventListener("load", function() {
 		}
 	}
 	
-	
 	var recap1 = document.querySelector("#recap1");
 	var recap2 = document.querySelector("#recap2");
 	var recap3 = document.querySelector("#recap3");
@@ -31,8 +30,6 @@ window.addEventListener("load", function() {
 	var content1 = document.querySelector("#content1");
 	var content2 = document.querySelector("#content2");
 	var content3 = document.querySelector("#content3");
-	var content4 = document.querySelector("#content4");
-	
 	recap1.addEventListener("click",function() {
 		recap1.className = "select"
 		recap2.className = "cancel";
@@ -41,7 +38,6 @@ window.addEventListener("load", function() {
 		content1.style.display = "block";
 		content2.style.display = "none";
 		content3.style.display = "none";
-		content4.style.display = "none";
 		recap.style.height = "1900px";
 	});
 	recap2.addEventListener("click",function() {
@@ -52,7 +48,6 @@ window.addEventListener("load", function() {
 		content2.style.display = "block";
 		content1.style.display = "none";
 		content3.style.display = "none";
-		content4.style.display = "none";
 		recap.style.height = "700px";
 	});
 	recap3.addEventListener("click",function() {
@@ -63,7 +58,6 @@ window.addEventListener("load", function() {
 		content3.style.display = "block";
 		content2.style.display = "none";
 		content1.style.display = "none";
-		content4.style.display = "none";
 		recap.style.height = "2700px";
 	});
 	recap4.addEventListener("click",function() {
@@ -71,10 +65,5 @@ window.addEventListener("load", function() {
 		recap2.className = "cancel";
 		recap3.className = "cancel";
 		recap1.className = "cancel";
-		content4.style.display = "block";
-		content2.style.display = "none";
-		content3.style.display = "none";
-		content1.style.display = "none";
-		recap.style.height = "700px";
 	});
 });

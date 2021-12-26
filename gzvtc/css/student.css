@@ -111,6 +111,7 @@ article {
 	height: 900px;
 }
 
+/* aside部分 */
 article aside {
 	position: absolute;
 	top: 50px;
@@ -214,6 +215,7 @@ article div {
 	background: url(../img/weather.png) no-repeat;
 }
 
+/* section部分 */
 section ul {
 	position: absolute;
 	top: 320px;
@@ -262,6 +264,17 @@ section ul>li h3 a {
 
 section ul>li:nth-child(1) h3 a {
 	width: 70px;
+}
+
+.course {
+	height: 40px;
+	width: 93%;
+	margin: 10px 0 0 19px;
+	background-color: #aaa;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
 }
 
 .notice li {

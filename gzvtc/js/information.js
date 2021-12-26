@@ -47,7 +47,7 @@ window.addEventListener("load", function() {
 		clearInterval(obj.timer); //停止定时器
 		obj.timer = setInterval(function() {
 			var step = (target - obj.offsetLeft) / 10;
-			step = step > 0 ? Math.ceil(step) : Math.floor(step);
+			step = step > 0 ? Math.ceil(step) : Math.floor(step); //ceil向上取整  floor向下取整
 			if (obj.offsetLeft == target) {
 				clearInterval(obj.timer); //停止动画
 			}
@@ -121,4 +121,24 @@ window.addEventListener("load", function() {
 		arrowRight.click(); //手动调用点击事件
 	}, 4000);
 	// 轮播图end
+
+	// json部分
+	var xhr = new XMLHttpRequest();
+	var take = 0;
+	xhr.open("GET", "information.json", true);
+	xhr.send();
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && xhr.status == 200) {
+			take = JSON.parse(xhr.responseText)
+			var temp = document.querySelector(".temp");
+			temp.innerHTML += '<a href="javascript:;"><img src="' + take.imgArr[0].imgaddr +
+				'" width="296px"></a>';
+			temp.innerHTML += '<a href="javascript:;"><img src="' + take.imgArr[1].imgaddr +
+				'" width="296px"></a>';
+			temp.innerHTML += '<a href="javascript:;"><img src="' + take.imgArr[2].imgaddr +
+				'" width="296px"></a>';
+			temp.innerHTML += '<a href="javascript:;"><img src="' + take.imgArr[3].imgaddr +
+				'" width="296px"></a>';
+		}
+	}
 });

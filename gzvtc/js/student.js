@@ -1,4 +1,3 @@
-// 下拉菜单
 window.addEventListener("load", function() {
 	var server = document.querySelector('.server');
 	var serverdown = document.querySelector('.serverdown').querySelector("ul");

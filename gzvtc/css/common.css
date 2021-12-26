@@ -1,13 +1,14 @@
+/* 字体图标 */
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?gws718');
-  src:  url('../fonts/icomoon.eot?gws718#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?gws718') format('truetype'),
-    url('../fonts/icomoon.woff?gws718') format('woff'),
-    url('../fonts/icomoon.svg?gws718#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?gws718');
+	src: url('../fonts/icomoon.eot?gws718#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?gws718') format('truetype'),
+		url('../fonts/icomoon.woff?gws718') format('woff'),
+		url('../fonts/icomoon.svg?gws718#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
 }
 
 .iconfont {
@@ -16,6 +17,11 @@
 	font-style: normal;
 }
 
+.bgWhite {
+	background-color: #fff!important;
+}
+
+/* 公共样式 */
 .public {
 	width: 1200px;
 	margin: 0 auto;
@@ -24,10 +30,6 @@
 
 body {
 	background-color: #EDEADF;
-}
-
-.bgWhite {
-	background-color: #fff !important;
 }
 
 @media (min-width: 0) {
