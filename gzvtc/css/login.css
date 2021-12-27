@@ -160,7 +160,6 @@ form input {
 	animation-name: menu5;
 	animation-duration: .5s;
 	animation-fill-mode: forwards;
-	display: block;
 }
 @keyframes menu5 {
 	0% {

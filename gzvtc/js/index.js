@@ -25,7 +25,7 @@ window.addEventListener("load", function() {
 		arrowRight.style.display = 'none';
 		timer = setInterval(function() { //鼠标离开自动轮播
 			arrowRight.click(); //手动调用点击事件
-		}, 3000);
+		}, 4000);
 	});
 	//动态生成圆点
 	var ul = adv.querySelector('ul');
