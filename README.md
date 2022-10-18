@@ -23,4 +23,5 @@ http://lgh1024.gitee.io/gzvtc/
 #### 专题页5：(http://lgh1024.gitee.io/gzvtc/student.html)
 学生系统页面；页面跳转，动画
 
-### 项目难点解决办法：百度搜索，菜鸟手册，CSDN，哔哩哔哩
+### 项目难点解决办法：
+- 百度搜索，菜鸟手册，CSDN，哔哩哔哩
