@@ -2,7 +2,7 @@
 - 学校网站
 
 ### 查看效果 
-http://lgh1024.gitee.io/gzvtc/
+- http://lgh1024.gitee.io/gzvtc/
 
 ### 内容简介
 - 学校介绍，校园风采，学院介绍，登录页面，学生系统
